@@ -43,4 +43,8 @@ siteLink.textContent = "Read more..."
 paragraph2.append(siteLink)
 
 
+const article1 = document.querySelector('section.posts article')
+article.before(article1)
+
+
 
