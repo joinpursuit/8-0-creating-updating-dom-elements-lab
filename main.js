@@ -42,3 +42,11 @@ paragraph2.append(link)
 
 span.prepend(strong)
 
+
+const article2 = document.querySelectorAll(".posts article")[1]
+
+document.querySelector(".posts").prepend(article2)
+
+
+
+
