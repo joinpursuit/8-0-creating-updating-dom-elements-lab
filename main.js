@@ -46,9 +46,7 @@ spanAnchor.setAttribute("href", "#");
 spanAnchor.textContent = "Read more...";
 asideSpan.append(spanAnchor);
 
-
-
-
 // add this `article` element to end of `sections.post` element
 let endOfSection = document.querySelector(".posts");
 endOfSection.append(article);
+
