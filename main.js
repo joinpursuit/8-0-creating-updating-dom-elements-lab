@@ -25,5 +25,8 @@ const paragraph = newElementWithText(
 );
 newArticle.append(paragraph);
 
+const aside = document.createElement("aside");
+newArticle.append(aside);
+
 const postSection = document.querySelector(".posts");
 postSection.append(newArticle);
