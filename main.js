@@ -16,5 +16,8 @@ img.setAttribute("src", "./images/paul-gilmore-unsplash.jpg");
 img.setAttribute("alt", "Image of a mountain in front of a lake.");
 newArticle.append(img);
 
+const heading = newElementWithText("h3", "Stop Planning");
+newArticle.append(heading);
+
 const postSection = document.querySelector(".posts");
 postSection.append(newArticle);
