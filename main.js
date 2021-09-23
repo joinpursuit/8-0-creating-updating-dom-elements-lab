@@ -19,5 +19,11 @@ newArticle.append(img);
 const heading = newElementWithText("h3", "Stop Planning");
 newArticle.append(heading);
 
+const paragraph = newElementWithText(
+  "p",
+  "You -- yes you! You're an over-planner, I can tell. It's time to stop planning so much and instead focusing on relaxing. Taking a break at all is so stressful these days; why add to the stress by overworking yourself?"
+);
+newArticle.append(paragraph);
+
 const postSection = document.querySelector(".posts");
 postSection.append(newArticle);
