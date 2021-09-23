@@ -28,5 +28,22 @@ newArticle.append(paragraph);
 const aside = document.createElement("aside");
 newArticle.append(aside);
 
+const p = document.createElement("p");
+aside.append(p);
+
+const span = newElementWithText("span", "4 Minutes");
+p.append(span);
+
+const strong = newElementWithText("strong", "Read Time:");
+span.prepend(strong);
+
+const a = newElementWithText("a", "Read more...");
+a.setAttribute("href", "#");
+p.append(a);
+
 const postSection = document.querySelector(".posts");
 postSection.append(newArticle);
+
+const articles = document.querySelectorAll(".posts article");
+
+articles[2].before(articles[0]);
