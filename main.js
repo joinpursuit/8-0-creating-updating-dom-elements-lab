@@ -4,8 +4,21 @@ featured.setAttribute("class", "featured");
 
 // create `article` element with JavaScript.
 let article = document.createElement("article");
-article.textContent = "test";
 
+// create image
+let mountainImg = document.createElement("img");
+mountainImg.setAttribute("src", "./images/paul-gilmore-unsplash.jpg");
+mountainImg.setAttribute("alt", "Image of a mountain in front of a lake.");
+article.append(mountainImg);
+
+// create h3 header
+let mountainHeader = document.createElement("h3");
+mountainHeader.textContent = "Stop Planning";
+article.append(mountainHeader);
+
+// create paragraph
+
+// create aside
 
 
 
