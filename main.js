@@ -50,3 +50,15 @@ asideSpan.append(spanAnchor);
 let endOfSection = document.querySelector(".posts");
 endOfSection.append(article);
 
+
+// get first article's location & give it an `id`
+let firstArticle = document.querySelectorAll(".posts article")[0];
+firstArticle.setAttribute("id", "firstArticle");
+
+
+// get second article's location & give it an `id`
+let secondArticle = document.querySelectorAll(".posts article")[1];
+secondArticle.setAttribute("id", "secondArticle");
+
+// Move the positions of articles. first = 2nd, second = 1st
+firstArticle.before(secondArticle);
