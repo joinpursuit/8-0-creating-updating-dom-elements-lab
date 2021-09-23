@@ -37,6 +37,4 @@ article.append(aside);
 sectionPost.append(article);
 
 const allPosts = document.querySelectorAll(".posts article");
-for (let i = 0; i < allPosts.length; i++) {
-  allPosts[0].before(allPosts[1]);
-}
+allPosts[0].before(allPosts[1]);
