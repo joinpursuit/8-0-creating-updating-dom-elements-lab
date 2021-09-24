@@ -54,10 +54,15 @@ If you're unclear about any of the instructions below, remember that you can che
     </p>
     <aside>
       <p>
-        <span><strong>Read Time:</strong> 4 Minutes</span
-        ><a href="#">Read more...</a>
+        <span>
+          <strong>Read Time:</strong> 4 Minutes
+        </span>
+        <a href="#">Read more...</a>
       </p>
     </aside>
   </article>
   ```
 - [ ] Move the first article from inside the `section.posts` element to become the second article and move the second article so that it is the first article.
+
+// first => 2nd 
+//2nd => 1st
