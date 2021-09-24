@@ -32,10 +32,13 @@ span.textContent = "4 Minutes";
 paragraph2.append(span);
 
 const strong = document.createElement("strong");
-strong.textContent = "Read Time";
-span.append(strong);
+strong.textContent = "Read Time: ";
+span.before(strong);
 
 const siteLink = document.createElement("a");
 siteLink.setAttribute("href", "#");
 siteLink.textContent = "Read more...";
 paragraph2.append(siteLink);
+
+const article1 = document.querySelector("section.posts article");
+article.before(article1);
