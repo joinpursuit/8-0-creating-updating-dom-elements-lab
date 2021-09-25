@@ -44,13 +44,13 @@ p2.append(a);
 
 
 // [ ] Switch the first and Second Articles 
-gamesArticle = document.querySelector("section.posts")
+let gamesArticle = document.querySelector(".posts article")
 // how do you grab the second architectureArticle = document.querySelector()
+gamesArticle.remove();
 
-posts = document.querySelectorAll("section.posts")
+let takeArticle = document.querySelector(".posts article")
 
-// for(post of posts){
-//   if(post.name = Games to play){
-      // insertNode Before ()
-// }
-// }
+//set games article after 
+takeArticle.after(gamesArticle)
+
+
