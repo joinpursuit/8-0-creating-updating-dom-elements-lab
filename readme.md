@@ -38,8 +38,8 @@ To complete the tests in this lab, you will need to create and update a number o
 
 If you're unclear about any of the instructions below, remember that you can check the test file to see what exactly is being tested.
 
-- [ ] Add a class of "featured" to the first `section` element on the page.
-- [ ] Create the following `article` element with JavaScript and add at the end of the `section.posts` element.
+- [✅ ] Add a class of "featured" to the first `section` element on the page.
+- [✅ ] Create the following `article` element with JavaScript and add at the end of the `section.posts` element.
   ```html
   <article>
     <img
