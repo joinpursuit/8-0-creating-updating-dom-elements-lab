@@ -26,5 +26,11 @@ heading3.textContent = "hi";
 let articleParagaph = document.createElement("p") /* -------- creating paragraph ---------- */
 articleParagaph.textContent =  `You -- yes you! You're an over-planner, I can tell. It's time to stop
 planning so much and instead focusing on relaxing. Taking a break at all
-is so stressful these days; why add to the stress by overworking yourself`
+is so stressful these days; why add to the stress by overworking yourself? Hi`;
+
+/* adding the elements to the article created */
+
+article.append(img);
+article.append(heading3);
+article.append(articleParagaph);
 
