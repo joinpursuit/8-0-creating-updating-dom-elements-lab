@@ -40,11 +40,11 @@ let spanStrong = document.createElement("strong");
 spanStrong.textContent = "Read Time:";
 asideSpan.prepend(spanStrong);
 
-// create `a` element, to go inside `asideSpan`
+// create `a` element, to be sibling of `asideSpan`
 let spanAnchor = document.createElement("a");
 spanAnchor.setAttribute("href", "#");
 spanAnchor.textContent = "Read more...";
-asideSpan.append(spanAnchor);
+asideParagraph.append(spanAnchor);
 
 // add this `article` element to end of `sections.post` element
 let endOfSection = document.querySelector(".posts");
