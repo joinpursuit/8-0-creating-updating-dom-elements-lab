@@ -14,7 +14,7 @@ const para2 = document.createElement('p');
 const sections = document.querySelector('section.posts');
 sections.append(article);
 
-// add the elements to the article
+// add the elements to the article in order
 article.append(img);
 article.append(h3);
 article.append(para);
