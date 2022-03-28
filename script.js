@@ -4,7 +4,7 @@ firstSection.classList.add("featured");
 const article = document.createElement("article");
 const posts = document.getElementsByClassName("posts")[0];
 
-const image = document.createElement("image");
+const image = document.createElement("img");
 image.setAttribute("src", "./images/paul-gilmore-unsplash.jpg");
 image.setAttribute("alt", "Image of a mountain in front of a lake.");
 article.append(image);
@@ -33,3 +33,6 @@ paragraph2.append(link);
 article.append(aside);
 
 posts.append(article);
+
+const articleList = posts.querySelectorAll("article");
+articleList[0].before(articleList[1]);
