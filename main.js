@@ -37,5 +37,5 @@ readMoreLink.textContent = 'Read more...';
 readMoreLink.setAttribute('href', '#');
 span.after(readMoreLink);
 
-let postSwaps = document.querySelectorAll('section.posts article');
-postSwaps[0].before(postSwaps[1]);
+let postToSwap = document.querySelectorAll('section.posts article');
+postToSwap[0].before(postToSwap[1]);
