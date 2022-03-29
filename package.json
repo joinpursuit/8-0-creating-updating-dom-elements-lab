@@ -11,8 +11,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^8.3.1",
+    "cypress": "^9.5.3",
     "cypress-watch-and-reload": "^1.5.3",
-    "live-server": "^1.2.1"
+    "live-server": "^1.1.0"
   }
 }
