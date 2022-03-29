@@ -1,0 +1,32 @@
+const section = document.querySelector('section');
+section.classList.add('featured');
+const section2 = document.querySelector('section.posts');
+const article = document.createElement('article');
+const h3 = document.createElement('h3');
+const p1 = document.createElement('p');
+const p2 = document.createElement('p');
+const a = document.createElement('a');
+const span = document.createElement('span');
+const aside = document.createElement('aside');
+const img = document.createElement('img');
+const strong = document.createElement('strong');
+img.setAttribute("src", "./images/paul-gilmore-unsplash.jpg");
+img.setAttribute('alt', 'Image of a mountain in front of a lake.');
+a.setAttribute('href',"#");
+h3.textContent = 'Stop Planning';
+p1.textContent = `You -- yes you! You're an over-planner, I can tell. It's time to stop
+planning so much and instead focusing on relaxing. Taking a break at all
+is so stressful these days; why add to the stress by overworking yourself?`;
+strong.textContent = 'Read Time:';
+span.textContent = ' 4 Minutes';
+a.textContent = 'Read more..';
+span.prepend(strong);
+p2.append(span,a);
+aside.append(p2);
+article.append(img,h3,p1,aside);
+section2.append(article);
+const section3 = document.querySelector('section.posts article');
+section3.remove();
+const section4 = document.querySelector('section.posts article');
+section4.remove();
+section2.prepend(section4,section3);
