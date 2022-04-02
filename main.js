@@ -22,21 +22,16 @@ newSection.append(newArticle);
 const newAside =document.createElement("aside")
 const newP = document.createElement("p")
 const newSpan = document.createElement("span");
-// let boldStr = document.querySelector("span");
-// boldStr.textContent = `ReadTime:`;
-// // boldStr.setAttribute("strong");
-// let normStr = `4 Minutes`;
-// newSpan.textContent = boldStr +  normStr;
 
-newSpan.innerHTML = `<strong>Read Time:</strong>  4 Minutes`;
+newSpan.innerHTML = "<strong>Read Time:</strong>  4 Minutes";
 
 
 const newA = document.createElement("a");
 newA.setAttribute("href","#");
 newA.textContent =`Read more...`;
+newP.append(newSpan, newA)
 
-
-newAside.append(newP, newSpan, newA);
+newAside.append(newP);
 newArticle.append(newAside);
 
 const firstA = document.querySelectorAll("section.posts article");
