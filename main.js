@@ -33,13 +33,12 @@ aside.prepend(newParagraph)
 const span = document.createElement(`span`)
 newParagraph.prepend(span)
 const bold = document.createElement(`strong`)
-console.log(bold)
+// console.log(bold)
 bold.textContent = `Read Time: `
-newParagraph.prepend(bold)
-// span.textContent = `Read Time: `
-// span.style.fontWeight = 'bold'
-
 span.textContent += `4 Minutes`
+span.prepend(bold)
+
+// span.textContent += `4 Minutes`
 
 const spanLink = document.createElement(`a`)
 span.after(spanLink)
