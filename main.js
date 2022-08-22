@@ -3,7 +3,7 @@ const section = document.querySelector('section');
 section.setAttribute("class", "featured");
 
 // declare a variable to access 'section .posts'
-const sectionPosts = document.querySelector('.posts');
+const sectionPosts = document.querySelector('section.posts');
 
 // create the 'article' tag
 const article = document.createElement('article');
@@ -29,7 +29,7 @@ const article = document.createElement('article');
 
  //create 'span' tag and add text
  const span = document.createElement('span')
- span.textContent = " 4 Minutes"
+ span.textContent = "4 Minutes"
 
  //create 'strong' tag and add text
  const strong = document.createElement('strong')
@@ -40,9 +40,13 @@ const article = document.createElement('article');
  a.setAttribute("href", "#")
  a.textContent = 'Read more...'
 
- // put everything together using append and prepend
+ // put everything together using append/prepend
  sectionPosts.append(article);
  article.append(image, h3, p, aside);
  aside.append(p);
  span.prepend(strong);
- p.append(span, a)
+ p.append(span, a);
+
+// order articles using before/after
+const articles = document.querySelectorAll('section.posts article');
+articles[0].before(articles[1]);
