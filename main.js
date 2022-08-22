@@ -2,13 +2,13 @@
 const section = document.querySelector('section');
 section.setAttribute("class", "featured");
 
-// declare a variable to access 'section .posts'
+// declare a variable to access 'section.posts'
 const sectionPosts = document.querySelector('section.posts');
 
 // create the 'article' tag
 const article = document.createElement('article');
 
-// create 'image' tag and attributes
+// create 'image' tag and add attributes
  const image = document.createElement('img');
  image.setAttribute("src", "./images/paul-gilmore-unsplash.jpg");
  image.setAttribute("alt", "Image of a mountain in front of a lake.");
@@ -17,11 +17,11 @@ const article = document.createElement('article');
  const h3 = document.createElement('h3');
  h3.textContent = "Stop Planning"
 
- // create 'p' tage & add text
+ // create 'p' tag and add text
  const p = document.createElement('p')
  p.textContent = "You -- yes you! You're an over-planner, I can tell. It's time to stop planning so much and instead focusing on relaxing. Taking a break at all is so stressful these days; why add to the stress by overworking yourself?"
 
- //create aside tag
+ //create 'aside' tag
  const aside = document.createElement('aside')
 
  //create next 'p' tag
@@ -29,13 +29,13 @@ const article = document.createElement('article');
 
  //create 'span' tag and add text
  const span = document.createElement('span')
- span.textContent = "4 Minutes"
+ span.textContent = " 4 Minutes"
 
  //create 'strong' tag and add text
  const strong = document.createElement('strong')
  strong.textContent = "Read Time:"
 
- // create 'a' tag and attributes and text
+ // create 'a' tag and add attributes and add text
  const a = document.createElement('a')
  a.setAttribute("href", "#")
  a.textContent = 'Read more...'
