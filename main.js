@@ -1,8 +1,11 @@
 const firstSec = document.querySelector(`section`);
 firstSec.setAttribute(`class`, `featured`);
 
-const article = document.createElement(`article`);
 const posts = document.querySelector(`.posts`);
+const firstArt = document.querySelector(`.posts article`)
+posts.append(firstArt)
+
+const article = document.createElement(`article`);
 posts.append(article);
 const image = document.createElement(`img`);
 image.setAttribute(`src`, `./images/paul-gilmore-unsplash.jpg`);
@@ -29,9 +32,4 @@ const anchor = document.createElement(`a`)
 anchor.textContent = `Read more...`
 anchor.setAttribute(`href`, `#`)
 spanTag.append(anchor)
-
-
-
-// `<span><strong>Read Time:</strong> 4 Minutes</span><a href="#">Read more...</a>`;
-
 aside.append(asideParagraph);
