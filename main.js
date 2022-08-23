@@ -36,19 +36,20 @@ const aside = document.createElement('aside');
 para1.after(aside);
 
 const p = document.createElement('p');
-const span = document.createElement('span');
-const strong = document.createElement('strong');
-span.append(strong);
-// span.textContent = `${strong}`;
-
-strong.textContent = 'Read Time:';
-span.textContent = '4 minutes';
+const span = document.createElement(`span`)
+p.prepend(span)
+const bold = document.createElement(`strong`)
+bold.textContent = `Read Time: `
+span.textContent += `4 Minutes`
+span.prepend(bold)
 const anchor = document.createElement('a');
 anchor.setAttribute('href', '#');
 anchor.textContent = 'Read more...';
-p.prepend(span);
 p.append(anchor);
 aside.append(p);
+
+
+
 
 // third test
 
