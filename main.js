@@ -27,8 +27,18 @@ const aside = document.createElement("aside");
 const asideP = document.createElement("p");
 aside.append(asideP);
 
-asideP.innerHTML =
-  '<span><strong>Read Time:</strong> 4 Minutes</span><a href="#">Read more...</a>';
+const span = document.createElement("span");
+const strong = document.createElement("strong");
+strong.innerText = "Read Time:";
+span.append(strong);
+span.innerHTML += " 4 Minutes";
+
+const a = document.createElement("a");
+a.setAttribute("href", "#");
+a.innerText = "Read more...";
+
+asideP.append(span);
+asideP.append(a);
 
 article.append(aside);
 
