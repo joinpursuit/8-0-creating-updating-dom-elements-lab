@@ -18,3 +18,8 @@ const sect = document.querySelector('section');
      ><a href="#">Read more...</a>
    </p>
  </aside>`
+ const sections = document.querySelectorAll('section')
+ sections[sections.length-1].append(newPost);
+
+
+
