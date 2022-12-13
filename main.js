@@ -22,4 +22,8 @@ const sect = document.querySelector('section');
  sections[sections.length-1].append(newPost);
 
 
+ const article = document.querySelectorAll('article');
+ article[2].prepend(article[1]);
+
+
 
