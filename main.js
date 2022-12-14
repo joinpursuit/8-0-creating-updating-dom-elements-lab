@@ -46,8 +46,8 @@ strong.after(span);
 span.after(aTag);
 
 // add text inside span 
-span.innerText = "4 Minutes";
-strong.innerText = "Read Time:";
+span.innerText = " 4 Minutes";
+strong.innerText += "Read Time:";
 aTag.innerText = 'Read more...'
 
 // set attribute for aTag element
