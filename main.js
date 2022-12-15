@@ -28,19 +28,17 @@ const span = document.createElement("span")
 p.append(span)
 
 const strong = document.createElement("strong")
+
 span.append(strong)
+
 strong.textContent = "Read Time:"
-span.textContent = "4 Minutes"
+span.append("4 Minutes")
 
 const a = document.createElement("a")
-p.append(a)
+span.after(a)
 
 a.setAttribute("href","#")
 a.textContent = "Read more..."
 
-/* <aside>
-      <p>
-        <span><strong>Read Time:</strong> 4 Minutes</span
-        ><a href="#">Read more...</a>
-      </p>
-    </aside> */
+const articleArray = document.querySelectorAll("section.posts article")
+post.prepend(articleArray[1])
