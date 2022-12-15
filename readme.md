@@ -54,8 +54,8 @@ If you're unclear about any of the instructions below, remember that you can che
     </p>
     <aside>
       <p>
-        <span><strong>Read Time:</strong> 4 Minutes</span
-        ><a href="#">Read more...</a>
+        <span><strong>Read Time:</strong> 4 Minutes</span>
+        <a href="#">Read more...</a>
       </p>
     </aside>
   </article>
