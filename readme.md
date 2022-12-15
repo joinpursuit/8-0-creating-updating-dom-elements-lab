@@ -1,4 +1,4 @@
-# Creating and Updating DOM Elements
+do# Creating and Updating DOM Elements
 
 Use this travel blog website to practice reading and deleting elements from the DOM.
 
