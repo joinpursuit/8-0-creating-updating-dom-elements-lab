@@ -45,18 +45,19 @@ aside.append(paragraphAside)
 const span = document.createElement("span")
 paragraphAside.append(span)
 
-// create strong inside span 
+// create strong inside span and add content
 const strong = document.createElement("strong")
-span.append(strong)
 strong.textContent = "Read Time:"
-span.append("4 Minutes")    // we append else everything turns bold
+span.textContent = "4 Minutes"
+span.prepend(strong)
 
+//create <a> and add href and text
 const alink = document.createElement("a")
-span.after(alink)
+paragraphAside.append(alink)
 
 alink.setAttribute("href","#")
 alink.textContent = "Read more..."
 
 // testcase 3
-const articleArray = document.querySelectorAll("section.posts article")
-postSection.prepend(articleArray[1])
+const articleNode = document.querySelectorAll("section.posts article")
+postSection.prepend(articleNode[1])
