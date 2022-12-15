@@ -31,11 +31,10 @@ img.setAttribute("alt", "Image of a mountain in front of a lake.")
 
 //create 'span' and 'p'
 const span = document.createElement("span")
-const aTag = document.createElement("a")
 const strong = document.createElement("strong")
+const aTag = document.createElement("a")
 const pTag2 = document.createElement("p")
 
-span.innerText = "4 Minutes "
 strong.innerText = "Read Time: "
 aTag.innerText = "Read more..."
 
@@ -44,10 +43,12 @@ aTag.setAttribute("href", "#")
 aside.append(pTag2)
 pTag2.append(span)
 span.append(strong)
+span.append('4 Minutes ')
 span.append(aTag)
 
-const allArticles = document.querySelectorAll("section.post.article")
-console.log(allArticles)
+
+const allArticles = document.querySelectorAll("section.posts article")
+postSection.prepend(allArticles[1])
 
 
 
