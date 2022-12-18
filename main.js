@@ -63,7 +63,6 @@ is so stressful these days; why add to the stress by overworking yourself?
 
 const posts = document.querySelector(".posts");
 posts.append(article);
-console.log(posts);
 
 let firstArticle = posts.querySelector("article");
 firstArticle.remove();
@@ -73,3 +72,9 @@ secondArticle.remove();
 
 posts.prepend(firstArticle);
 posts.prepend(secondArticle);
+
+
+// const postNodeList = document.querySelectorAll(".posts");
+
+// postNodeList.forEach( post => post.remove() );
+
