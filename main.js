@@ -14,7 +14,7 @@ let sectionPost = document.querySelector('section.posts')
 //add the new element to the end of section posts
 sectionPost.append(newArticle)
 
-
+// creating new img and setting attributes
 let newImg = document.createElement('img')
 newImg.setAttribute('src', "./images/paul-gilmore-unsplash.jpg")
 newImg.setAttribute('alt', "Image of a mountain in front of a lake.")
@@ -30,25 +30,45 @@ newArticle.append(pushinP)
 
 let aside = document.createElement('aside')
 newArticle.append(aside)
+// not working//
 
-let selectAside = document.querySelector('aside')
+// let selectAside = document.querySelector('aside')
 
 let stillPushinP = document.createElement('p')
 
-selectAside.append(stillPushinP)
+aside.append(stillPushinP)
 
-let pSelect = document.querySelector('p')
+// let pSelect = document.querySelector('p')
 
-let span = document.createElement('span')
-pSelect.append(span)
-
-let spanSelect = document.querySelector('span')
-
-let strongTag = document.createElement('strong')
-spanSelect.append(strongTag)
+ let span = document.createElement('span')
+ let strongTag = document.createElement('strong')
 
 span.textContent = "4 Minutes"
-strongTag.textContent = "Read Time:"
+strongTag.textContent = "Read Time"
+
+span.append(strongTag)
+stillPushinP.append(span)
+
+let aTag = document.createElement('a')
+aTag.setAttribute('href', '#')
+aTag.textContent = 'Read more...'
+
+stillPushinP.append(aTag)
+
+// select all .posts artcles
+allArticles = document.querySelectorAll('.posts article')
+// put the second artice before the 1st
+sectionPost.prepend(allArticles[1])
+
+//sectionPost.append(newArticle)
+
+
+
+
+
+
+
+
 
 
 
