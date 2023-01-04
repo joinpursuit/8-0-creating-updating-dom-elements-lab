@@ -1,9 +1,9 @@
  // **Grabbing section element from HTML document.
- //  **Setting attribute with a class name featured on the to the first section element.
+ //  **Setting attribute with a class name/value featured on the to the first section element.
 const section = document.querySelector("section");
 section.setAttribute("class", "featured");
 
-// ** Creating article element and assigning a variable to it it 
+// ** Creating article element and assigning a variable to it.
 // ** This is the article we are creating to add to the existing page
 const newArticle = document.createElement("article")
 console.log(section)
@@ -43,7 +43,7 @@ newArticle.append(p)
 // ** Creating the "aside" element and asssigning a variable to store it in.
 // ** Appending the newly created article to the aside 
 // ** Creating another "p" and assigning another variable to store it in (pTag).
-// ** Appending (pTag) to article.
+// ** Appending (pTag) to article or rather aside.
 const aside = document.createElement("aside")
 newArticle.append(aside)
 const pTag = document.createElement("p")
@@ -51,7 +51,7 @@ aside.append(pTag)
 
 // ** Creating the "span" element and asssigning a variable to store it in.
 // ** Assigning text to the span.innerText property.
-// ** Appending the "span" element to the "p" element.
+// ** Appending the "span" element to the "p" element assigned to the variable pTag.
 const span = document.createElement("span")
 span.innerText = " 4 Minutes";
 pTag.append(span)
@@ -65,7 +65,7 @@ span.prepend(strong)
 
 // ** Create "a" element and asssigning a variable to store it in.
 // ** Set attributes on "a" element. 
-// ** Assign text to our variable representing the the "aTag.innerText" property.
+// ** Assign text to our variable representing the "aTag.innerText" property.
 // ** Append "a"element to "span" element.
 const aTag = document.createElement("a");
 aTag.setAttribute("href", "#")
@@ -74,7 +74,7 @@ span.after(aTag)
 
 
 // ** Grab all articles in section.posts 
-// ** Swap position between the first and second article by prepending the second article to the section withc class element posts 
+// ** Swap position between the first and second article by prepending the second article to the section with class element .posts.
 const allArticles = document.querySelectorAll("section.posts article");
 
 sectionPost.prepend(allArticles[1])
