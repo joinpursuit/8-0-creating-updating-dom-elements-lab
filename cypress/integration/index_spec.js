@@ -7,7 +7,7 @@ describe("Featured", () => {
 describe("New post", () => {
   it("should add a new post with the specified content", () => {
     cy.get("section.posts article")
-      .should("have.length", 3)
+      .should("have.length", 4)
       .last()
       .within(() => {
         cy.get("img")
@@ -39,7 +39,7 @@ describe("New post", () => {
 describe("Swap article positions", () => {
   it("should swap the first and second article in `section.posts`", () => {
     cy.get("section.posts article")
-      .should("have.length", 3)
+      .should("have.length", 4)
       .then(([first, second]) => {
         cy.wrap(first).should("contain.text", "Take in the Architecture");
         cy.wrap(second).should("contain.text", "Games to Play on the Road");
