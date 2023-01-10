@@ -1,6 +1,8 @@
+// Adding 'featured' class to the first section
 const featuredSection = document.querySelector('section');
 featuredSection.classList.add('featured');
 
+// Creating all the elements necessary for the article as well as their classes
 const article = document.createElement('article')
 const img = document.createElement('img')
     img.classList.add('src')
@@ -22,15 +24,22 @@ const a = document.createElement('a')
     a.setAttribute('href', '#')
     a.textContent = 'Read more...'
 
+// Sorting the elements in the given order
+const sectionPost = document.querySelector('section.posts')
+sectionPost.append(article)
+    article.append(img)
+    article.append(h3)
+    article.append(paragraph1)
+    article.append(aside)
+        aside.append(paragraph2)
+            paragraph2.append(span)
+                span.prepend(strong)
+            paragraph2.append(a)
+
+// Swapping the first and second article within the posts
 const sectionPosts = document.querySelector('section.posts')
-sectionPosts.append(article)
-article.append(img)
-article.append(h3)
-article.append(paragraph1)
-article.append(aside)
-aside.append(paragraph2)
-paragraph2.append(span)
-span.prepend(strong)
-paragraph2.append(a)
+const allPosts = document.querySelectorAll('section.posts article')
+
+sectionPosts.prepend(allPosts[1])
 
 
